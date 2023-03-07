@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: nodejs-health-check-sf8a
+  namespace: e2e-demos-wxbz-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/psturc/test-images-protected@sha256:a836b890a79988a0e073649aea9755e6dddd768d9b1998cb38a5db119700ea77
+        name: my-nodejs
+        resources: {}
+status: {}
