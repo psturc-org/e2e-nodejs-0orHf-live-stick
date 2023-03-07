@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: nodejs-health-check-sf8a
     spec:
       containers:
-      - image: quay.io/psturc/test-images-protected:0orHf-nodejs-health-check-sf8a
+      - image: quay.io/psturc/test-images-protected@sha256:a836b890a79988a0e073649aea9755e6dddd768d9b1998cb38a5db119700ea77
         name: my-nodejs
         ports:
         - containerPort: 3001
